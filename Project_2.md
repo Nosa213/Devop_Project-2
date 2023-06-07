@@ -110,5 +110,47 @@ Then you will be asked which plugings to install – choose suggested plugins.
   
   
   <img width="856" alt="image" src="https://github.com/Nosa213/Devop_Project-2/assets/125190958/613fcf76-dc91-4930-a16f-45f6f65b5f2c">
+    
+    
+Once plugins installation is done – create an admin user and you will get your Jenkins server address.
+
+The installation is completed!
+    
+    
+ <img width="1097" alt="Screenshot 2023-06-07 204037" src="https://github.com/Nosa213/Devop_Project-2/assets/125190958/8d6458c5-e00f-44ba-bde3-040d9dd53947">
+    
+    
+    
+Step 2 – Configure Jenkins to retrieve source codes from GitHub using Webhooks
+In this part, you will learn how to configure a simple Jenkins job/project (these two terms can be used interchangeably). This job 
+will will be triggered by GitHub webhooks and will execute a ‘build’ task to retrieve codes from GitHub and store it locally on 
+Jenkins server.
+
+1. Enable webhooks in your GitHub repository settings
+    
+  
+    <img width="1121" alt="image" src="https://github.com/Nosa213/Devop_Project-2/assets/125190958/f4bc76f9-bf77-4146-9e73-28e5af21b4df">
+    
+    
+    <img width="1141" alt="image" src="https://github.com/Nosa213/Devop_Project-2/assets/125190958/e489a4d2-dcfa-47b2-88a7-89aada728145">
+
+
+ 2. Go to Jenkins web console, click "New Item" and create a "Freestyle project" 
+    
+    
+  <img width="1070" alt="image" src="https://github.com/Nosa213/Devop_Project-2/assets/125190958/8d9dad1e-aa25-4e25-8bac-82c9fa232cbf">
+
+    
+To connect your GitHub repository, you will need to provide its URL, you can copy from the repository itself
+    
+   
+    
+
+
+ 
+    
+    
+
+
 
   
