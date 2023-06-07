@@ -143,14 +143,18 @@ Jenkins server.
     
 To connect your GitHub repository, you will need to provide its URL, you can copy from the repository itself
     
- Save the configuration and let us try to run the build. For now we can only do it manually. Click "Build Now" button, if you have configured everything correctly, the build will be successfull and you will see it under #1
-
-  
-
 <img width="469" alt="image" src="https://github.com/Nosa213/Devop_Project-2/assets/125190958/db0da9a0-bc6f-4948-a80f-4e1e83841f0b">
 
-  
-        
+ In configuration of your Jenkins freestyle project choose Git repository, provide there the link to your Tooling GitHub repository and credentials (user/password) so Jenkins could access files in the repository. 
+   
+ <img width="549" alt="image" src="https://github.com/Nosa213/Devop_Project-2/assets/125190958/0af891cb-236a-4fcd-8aed-a55d2d335104">
+   
+ Save the configuration and let us try to run the build. For now we can only do it manually. Click "Build Now" button, if you have configured everything correctly, the build will be successfull and you will see it under #1
+    
+<img width="1280" alt="Screenshot 2023-06-08 074949" src="https://github.com/Nosa213/Devop_Project-2/assets/125190958/d2cf7ce8-78ad-4561-a822-700ab4890b0e">
+
+
+    
 You can open the build and check in "Console Output" if it has run successfully.
 
 If so – congratulations! You have just made your very first Jenkins build!
@@ -185,7 +189,21 @@ By default, the artifacts are stored on Jenkins server locally
 ```
 ls /var/lib/jenkins/jobs/tooling_github/builds/<build_number>/archive/
 ```
+ 
+# CONFIGURE JENKINS TO COPY FILES TO NFS SERVER VIA SSH
+
+##  Step 3 – Configure Jenkins to copy files to NFS server via SSH
+Now we have our artifacts saved locally on Jenkins server, the next step is to copy them to our NFS server to /mnt/apps directory.
+
+Jenkins is a highly extendable application and there are 1400+ plugins available. We will need a plugin that is called "Publish Over 
+SSH".
+
+1. Install "Publish Over SSH" plugin.
+On main dashboard select "Manage Jenkins" and choose "Manage Plugins" menu item.
+
+On "Available" tab search for "Publish Over SSH" plugin and install it
     
+
 
 
 
