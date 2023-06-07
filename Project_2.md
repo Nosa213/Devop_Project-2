@@ -187,7 +187,7 @@ You have now configured an automated Jenkins job that receives files from GitHub
 By default, the artifacts are stored on Jenkins server locally
     
 ```
-ls /var/lib/jenkins/jobs/tooling_github/builds/<build_number>/archive/
+ls /var/lib/jenkins/jobs/project-2_github/builds/<build_number>/archive/
 ```
  
 # CONFIGURE JENKINS TO COPY FILES TO NFS SERVER VIA SSH
